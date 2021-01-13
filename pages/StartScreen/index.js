@@ -4,7 +4,8 @@ import {View, Text} from 'react-native';
 import {styles} from './styles';
 import LottieView from 'lottie-react-native';
 import {Button, Divider} from '../../Component';
-import {secondaryColor} from '../../Utils';
+
+const secondaryColor = '#000';
 
 export default (props) => {
   const {navigation} = props;
@@ -13,11 +14,11 @@ export default (props) => {
       <View style={styles.centerElement}>
         <View>
           <Text style={[styles.bigText, {color: secondaryColor}]}>
-            Name The Fame
+            Budget Book
           </Text>
           <Divider />
           <Text style={styles.instruction}>
-            Remember the name of famous person from history
+            Keep track your booking easily with Mobile Application
           </Text>
         </View>
 
@@ -30,9 +31,7 @@ export default (props) => {
           />
         </View>
 
-        <Button onPress={() => navigation.navigate('LevelOne', {level: 1})}>
-          Start
-        </Button>
+        <Button onPress={() => navigation.navigate('CardScreen')}>Start</Button>
       </View>
     </View>
   );

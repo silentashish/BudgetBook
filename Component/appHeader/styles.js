@@ -1,11 +1,12 @@
 import {ScaledSheet} from 'react-native-size-matters';
+import {primaryColor, secondaryColor, whiteColor} from '../../Utils';
 
 export const styles = ScaledSheet.create({
   appHeader: {
     alignItems: 'center',
-    height: '64@ms',
+    // height: '44@ms',
     width: '100%',
-    backgroundColor: '#000',
+    backgroundColor: primaryColor,
     justifyContent: 'center',
     alignItems: 'center',
     paddingVertical: '6@ms',
@@ -22,12 +23,12 @@ export const styles = ScaledSheet.create({
   title: {
     fontSize: '16@ms',
     fontWeight: 'bold',
-    color: '#fff',
+    color: whiteColor,
   },
   subTitle: {
     fontSize: '12@ms',
     fontWeight: 'bold',
-    color: '#fff',
+    color: whiteColor,
   },
   icon: {
     height: '18@ms',

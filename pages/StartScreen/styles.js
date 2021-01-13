@@ -1,5 +1,7 @@
 import {ScaledSheet} from 'react-native-size-matters';
-import {secondaryColor, primaryColor} from '../../Utils';
+
+const secondaryColor = '#000';
+const primaryColor = '#e0f2f1';
 
 export const styles = ScaledSheet.create({
   InfoSection: {
